@@ -1,0 +1,88 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    /* colors */
+
+    --clr-grey: #484848;
+    --clr-yellow: #fff900;
+    --clr-orange:  #ff6c00;
+    --clr-bg:  #262626;
+
+    /* fonts */
+
+    --fs-base: 80px;
+    --ff-base: font-family: 'Lato', sans-serif;
+}
+
+
+body {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    max-width: 2000px;
+    height: 100vh;
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    background-color: var(--clr-bg);
+    font-size: var(--fs-base);
+    color: var(--clr-grey);
+    text-shadow: 0 0 2px rgb(43, 42, 42);
+}
+
+.lighting span {
+
+    animation: lighting 1000ms alternate infinite ease;
+}
+
+@keyframes lighting {
+    0%, 85% {
+        color: var(--clr-grey);
+        text-shadow: none;
+    }
+
+    100% {
+        color: var(--clr-yellow);
+        text-shadow: 0 0 5px #fff200, 0 0 3px #ff9f1a;
+    }
+}
+
+.lighting span:nth-child(1) {
+    animation-delay: 150ms;
+}
+
+.lighting span:nth-child(2) {
+    animation-delay: 300ms;
+}
+
+.lighting span:nth-child(3) {
+    animation-delay: 450ms;
+}
+
+.lighting span:nth-child(4) {
+    animation-delay: 600ms;
+}
+
+.lighting span:nth-child(5) {
+    animation-delay: 750ms;
+}
+
+.lighting span:nth-child(6) {
+    animation-delay: 900ms;
+}
+
+.lighting span:nth-child(7) {
+    animation-delay: 1050ms;
+}
+
+.lighting span:nth-child(8) {
+    animation-delay: 1200ms;
+}
